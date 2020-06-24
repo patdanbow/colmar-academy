@@ -1,24 +1,51 @@
-body {
-    display: block;
+html {
+
 }
 
+body {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+
 header {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 24px 32px 24px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+img.ic-logo {
+    width: 100px;
+    height: auto;
+}
+
+.text-logo {
+    font-size: larger;
 }
 
 .nav-links {
     display: flex;
-    position: relative;
 }
 
 ul {
     display: flex;
-    justify-items: flex-end;
+    justify-content: flex-end;
 }
 
 li {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    margin: 16px;
 }
 
 main {
@@ -30,27 +57,37 @@ section {
   
 }
 
-.banner {
+section.banner {
     background-color: gray;
     justify-content: center;
     position: relative;
+    padding: 32px 24px 32px 24px;
 }
 
 .banner-image {
     display: flex;
     flex-direction: row;
-    width: 50%
 }
 
 .banner-description {
     margin: auto 0;
-    margin-left: 24px;
+    padding-left: 50px;
     width: 100%;
-    background-color: gray;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    text-align: center;
+    padding: 8px 16px;
 }
 
 .info {
     display: flex;
+    background-color: white;
 }
 
 .featured-article {
@@ -60,13 +97,17 @@ section {
 
 section.articles-side section.card {
     display: flex-box;
-    background-color: gray;
-
 }
 
 .card {
     display: flex;
     flex-direction: row;
+}
+
+.card-gray {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
 }
 
 h1.learning-title {
